@@ -21,7 +21,16 @@ public class Cards {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String cards = "D#K,D#A,D#2";
+        //1. One card is represented as suit#rank
+        //2. For suit, C is used for Club, H for Hearts, D for Diamond and S for Spade
+        //3. For rank, A is used for Ace, K for King, Q for Queen, J for Joker and other numbers from 2-10.
+        //4. Multiple cards are represented as "card1,card2,card3" in string format 
+        
+//        EX 1: "D#K,D#A,D#2" represents King of Diamond,Ace of Diamond and 2 of Diamond
+//        EX 2: "H#A,H#2,H#3"  represents Ace of Heart ,2 of Heart, and 3 of Heart
+        //5. to check if cards are in sequence String "cards" need to be changed manually and run the main method of this class i.e class Cards.
+        
+        String cards = "D#K,D#A,D#2";         // Change this String as instructed in above comments
         List rank = new ArrayList();
         List suit = new ArrayList();
         
